@@ -4,6 +4,9 @@ import { Contacts, Contact, ContactName, ContactField } from '@ionic-native/cont
 import { SMS } from '@ionic-native/sms/ngx';
 import { ToastController } from '@ionic/angular';
 import { NavController } from 'ionic-angular';
+import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
+import { Subject } from 'rxjs/Subject';
 import { constants } from 'os';
  declare var SMSReceive:any;
  declare var window: any;
@@ -20,7 +23,8 @@ export class HomePage {
   showOTPInput:boolean=false;
   OTPmessage:string='an OTP is sent to your mobile number. You should receive it in 15 seconds';
 
-  
+  public status = new BehaviorSubject('');
+  currentStatus = this.status.asObservable()
   myContacts: Contact[]=[];
   constructor(public navCtrl: NavController,private contacts: Contacts, private callNumber: CallNumber, private sms: SMS,private toastCtrl: ToastController) {}
 
