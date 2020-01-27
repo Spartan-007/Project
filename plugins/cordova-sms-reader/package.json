@@ -1,0 +1,64 @@
+{
+  "_from": "cordova-sms-reader",
+  "_id": "cordova-sms-reader@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-3aPgYUBBBMn92U6v0euXkz+uuRjk2vCuusxEcGv50PutavTyy9Jb8ABLML/NO+t2am+C6ArYQa+Xv7/2Jt4EmQ==",
+  "_location": "/cordova-sms-reader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-sms-reader",
+    "name": "cordova-sms-reader",
+    "escapedName": "cordova-sms-reader",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-sms-reader/-/cordova-sms-reader-0.0.3.tgz",
+  "_shasum": "417a7b19c430ea240c4ff0bb222c57b188d7f073",
+  "_spec": "cordova-sms-reader",
+  "_where": "C:\\Users\\Ganesh\\Project\\andDemo",
+  "author": {
+    "name": "Rajeev Sreedharan"
+  },
+  "bugs": {
+    "url": "https://github.com/rajeevs1992/cordova-sms-reader/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-sms-reader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "A no non sense plugin to read SMS",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "homepage": "https://github.com/rajeevs1992/cordova-sms-reader#readme",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "sms",
+    "read sms",
+    "sms reader",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache-2",
+  "name": "cordova-sms-reader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeevs1992/cordova-sms-reader.git"
+  },
+  "version": "0.0.3"
+}

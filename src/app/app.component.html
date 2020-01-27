@@ -295,6 +295,65 @@
   }
 </style>
 
+<div>
+  <form>
+    
+
+    <content>
+      <button (click)="()" expand="full">Load SMS</button>
+      
+      
+   
+      <list>
+        <item-sliding *ngFor="let c ofmyContacts">
+   
+         <item >
+           <label>{{c.name.givenName}}<b>{{c.name.familyName}}</b>
+           <p>
+                 {{c.phoneNumbers[0].value}}
+               </p>
+           </label>
+       
+             
+         </item>
+
+        </item-sliding>
+      </list>
+   
+        <!-- <table>
+   <tbody>
+   <tr *ngFor="let varname of myContacts ">
+   
+     <td>{{myContacts.Contacts}}</td>
+     
+   </tr>
+   
+   
+   
+   
+   </tbody>
+   
+   
+      </table>-->
+      <ion-content padding>
+       <button ion-button full (click)="()">Get SMS</button>
+      
+       <ion-list>
+         <ion-item *ngFor="let sms of smses">
+         <ion-icon name="star" *ngIf="sms.read==0"></ion-icon>
+         {{sms.address}}
+         <p>{{sms.body}}</p>
+         </ion-item>
+       </ion-list>
+     </ion-content>   
+   
+   </content> 
+   
+
+  </form>
+
+</div>
+
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
@@ -504,6 +563,7 @@
       </svg>
     </a>
   </div>
+  
 
   <!-- Footer -->
   <footer>
